@@ -11,7 +11,7 @@ public class FormatacaoMoeda {
 	private static final DecimalFormat FORMATO = new DecimalFormat(UNIDADE_MONETARIA + " #,###,##0.00");
 	
 	public FormatacaoMoeda (String valor) {
-		this.valor = new BigDecimal(valor);
+		this.setValor(new BigDecimal(valor));
 	}
 	
 	public BigDecimal getValor () {
@@ -19,19 +19,10 @@ public class FormatacaoMoeda {
 	}
 	
 	public String getValorFormatado() {
-		return FORMATO.format(valor);
+		return FORMATO.format(getValor());
 	}
 	
-	public void somarCom (String valorSomar) {
-		this.valor = this.valor.add(new BigDecimal(valorSomar));
+	public void setValor(BigDecimal valor) {
+		this.valor = valor;
 	}
-
-	public void substrairCom (String valorSubtrair) {
-		this.valor = this.valor.subtract(new BigDecimal(valorSubtrair));
-	}
-	
-	public void multiplicaCom (String valorMultiplicar) {
-		this.valor = this.valor.multiply(new BigDecimal(valorMultiplicar));
-	}
-
 }

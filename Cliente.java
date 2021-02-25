@@ -6,17 +6,7 @@ public class Cliente {
 	private String cpf;
 	private String usuario;
 	private int idade;
-	private ContaCorrente contaCorrente;
-	private ContaPoupanca contaPoupanca;
-	
-	/* Construtor para criação de um novo usuário */ 
-	Cliente (String nome, String cpf, String usuario, int idade){
-		this.nome = nome;
-		this.cpf = cpf;
-		this.usuario = usuario;
-		this.idade = idade;
-	}
-	
+		
 	/* Construtor para a criação de movimentação */
 	Cliente (String nome, String usuario){
 		this.nome = nome;
@@ -54,8 +44,4 @@ public class Cliente {
 	public void setIdade(int idade) {
 		this.idade = idade;
 	}
-	
-	
-	
-	
 }
