@@ -6,15 +6,15 @@ public class Cliente {
 	private String cpf;
 	private String usuario;
 	private int idade;
-		
+
 	/* Construtor para a criação de movimentação */
-	Cliente (String nome, String usuario){
+	Cliente(String nome, String usuario) {
 		this.nome = nome;
 		this.usuario = usuario;
 	}
 
 	public String getNome() {
-		return nome;
+		return this.nome;
 	}
 
 	public void setNome(String nome) {
@@ -22,7 +22,7 @@ public class Cliente {
 	}
 
 	public String getCpf() {
-		return cpf;
+		return this.cpf;
 	}
 
 	public void setCpf(String cpf) {
@@ -30,7 +30,7 @@ public class Cliente {
 	}
 
 	public String getUsuario() {
-		return usuario;
+		return this.usuario;
 	}
 
 	public void setUsuario(String usuario) {
@@ -38,10 +38,18 @@ public class Cliente {
 	}
 
 	public int getIdade() {
-		return idade;
+		return this.idade;
 	}
 
 	public void setIdade(int idade) {
 		this.idade = idade;
+	}
+	
+	public void status() {
+		System.out.println("Nome: " +this.nome);
+		System.out.println("Usuário: " +this.usuario);
+		System.out.println("CPF: " +this.cpf);
+		System.out.println("Idade: " +this.idade);
+		
 	}
 }
