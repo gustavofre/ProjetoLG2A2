@@ -12,7 +12,4 @@ public class Movimentacao extends FormatacaoMoeda {
 		setValor(super.getValor().add(new BigDecimal(valor)));
 	}
 	
-	public void mostraMov() {
-		System.out.println("");
-	}
 }

@@ -9,9 +9,12 @@ public class Main {
 		c1.getNome(); c1.getUsuario(); c1.setCpf("1245152"); c1.setIdade(20);
 		c1.status();
 		
-		
-		
-
+		Movimentacao m1 = new Movimentacao("-150");
+		System.out.println(m1.getValorFormatado());
+		m1.somarCom("170");
+		System.out.println(m1.getValorFormatado());
+		System.out.println("Tipo: " + Despesas.AGUA.despesas);
+		 
 	}
 
 }
