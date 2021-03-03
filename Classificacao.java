@@ -3,7 +3,7 @@ package Projeto;
 public enum Classificacao {
 
 	/* Enums */ 
-	CARTAOCREDITO("Cartão de crédito"), CARTAODEBITO("Cartão de débito");
+	CARTAOCREDITO("Cartão de crédito"), CARTAODEBITO("Cartão de débito"),  DINHEIRO("Dinheiro"), APROXIMACAO("Aproximação");
 
 	/* ATRIBUTOS */
 	private String classificacao;

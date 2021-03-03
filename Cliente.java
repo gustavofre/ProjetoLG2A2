@@ -11,6 +11,7 @@ public class Cliente {
 	Cliente(String nome, String usuario) {
 		this.nome = nome;
 		this.usuario = usuario;
+		System.out.println("Usuário: " +usuario);
 	}
 
 	public String getNome() {
