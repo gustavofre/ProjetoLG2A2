@@ -2,17 +2,19 @@ package Projeto;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class Lancamentos {
 
-	private Movimentacao valor;
-	private HorarioLancamento data;
+	private String valor;
+	private String data;
 	private String descricao; 
 	private Classificacao classificacao;
 	
-	Lancamentos ( HorarioLancamento hora,  Movimentacao string, String descricao, Classificacao classificacao){
-		this.data = hora;
-		this.valor = string;
+	Lancamentos ( LocalDateTime hora,  Movimentacao string, String descricao, Classificacao classificacao){
+		DateTimeFormatter dtfhora = DateTimeFormatter.ofPattern("dd/MM/YYYY  h:mm a");
+		this.data = dtfhora.format(hora);
+		this.valor = string.getValorFormatado();
 		this.descricao = descricao;
 		this.classificacao = classificacao;
 	}
