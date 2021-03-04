@@ -8,10 +8,10 @@ public class Cliente {
 	private int idade;
 
 	/* Construtor para a criação de movimentação */
-	Cliente(String nome, String usuario) {
+	Cliente(String nome, String usuario, String cpf, int idade) {
 		this.nome = nome;
-		this.usuario = usuario;
-		System.out.println("Usuário: " +usuario);
+		this.usuario = usuario; 
+		System.out.println("Usuário: " +usuario+ "\nCPF: " + cpf+ "\n\nTransações:\n");
 	}
 
 	public String getNome() {

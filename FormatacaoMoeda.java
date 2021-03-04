@@ -7,7 +7,6 @@ public class FormatacaoMoeda {
 
 	private BigDecimal valor;
 	private static final String UNIDADE_MONETARIA = "R$";
-	private static int CASAS_DECIMAIS = 2;
 	private static final DecimalFormat FORMATO = new DecimalFormat(UNIDADE_MONETARIA + " #,###,##0.00");
 
 	public FormatacaoMoeda(String valor) {

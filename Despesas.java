@@ -6,7 +6,7 @@ public enum Despesas {
 	MERCADO("Mercado"), TELEFONE("Telefone"),  CELULAR("Celular"), 
 	AGUA("Água"), ELETRICIDADE("Eletricidade"), DIVERSAO("Diversao"), 
 	OUTROS("Outros"),  ALUGUEL("Aluguel"), ESCOLA("Escola"), CURSO("Curso"), 
-	CONVENIMEDICO("Convênio médico"),  CONVENIOODONTOLOGICO("Convênio odontológico");
+	CONVENIMEDICO("Convênio médico"),  CONVENIOODONTOLOGICO("Convênio odontológico"), APLICACAOEMRENDA("Aplicação em renda");
 
 	//Atributos
 	protected String despesas;

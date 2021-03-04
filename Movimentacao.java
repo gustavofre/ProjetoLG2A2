@@ -2,8 +2,9 @@ package Projeto;
 
 import java.math.BigDecimal;
 
-public class Movimentacao extends FormatacaoMoeda {
 
+public class Movimentacao extends FormatacaoMoeda {
+		
 	Movimentacao(String valor) {
 		super(valor);		
 	}
@@ -12,5 +13,5 @@ public class Movimentacao extends FormatacaoMoeda {
 		setValor(super.getValor().add(new BigDecimal(valor)));
 	}
 	
-	
+
 }

@@ -9,18 +9,21 @@ public class Lancamentos {
 	private String data;
 	private String descricao; 
 	private String classificacao;
+	private String tipo;
 	
-	Lancamentos ( LocalDateTime hora,  Movimentacao string, String descricao, String classificacao2){
+	Lancamentos ( LocalDateTime hora,  Movimentacao string, String descricao, String classificacao2, String tipo){
 		DateTimeFormatter dtfhora = DateTimeFormatter.ofPattern("dd/MM/YYYY  h:mm a");
 		this.data = dtfhora.format(hora);
 		this.valor = string.getValorFormatado();
 		this.descricao = descricao;
 		this.classificacao = classificacao2;
+		this.tipo = tipo;
 	}
 	
 	@Override
 	public String toString() {
-		return data + " - " + valor + " - " + descricao + " - " + classificacao;
+		return data + " / " + valor + " - " + descricao + " - " + classificacao + "\nMétodo de pagamento: "  
+			   +  tipo + "\n" + "======================================================================\n" ;
 	}
 	
 	
