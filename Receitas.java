@@ -7,7 +7,7 @@ public enum Receitas {
 	JUROSPOUPANCA("Juros da poupança"), SALARIO("Salário");
 	
 	//Atributo
-	String receitas;
+	protected String receitas;
 	
 	//Métodos
 	Receitas(String rece) {

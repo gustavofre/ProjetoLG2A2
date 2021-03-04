@@ -19,9 +19,12 @@ public class Main {
 		
 		Cliente c2 = new Cliente("Gustavo", "gus");
 		Movimentacao c2m1 = new Movimentacao("2700");
-		Lancamentos c2l1 = new Lancamentos(agora , c2m1, "Padaria, café da manhã", Classificacao.CARTAOCREDITO);
+		Lancamentos c2l1 = new Lancamentos(agora , c2m1, "Padaria, café da manhã", Classificacao.CARTAODEBITO.classificacao);
 		System.out.println(c2l1);
 		
+		Movimentacao c2m2 = new Movimentacao("3000");
+		Lancamentos c2l2 = new Lancamentos(agora, c2m2, "Aluguel mês março", Despesas.ALUGUEL.despesas);
+		System.out.println(c2l2);
 		 
 	}
 

@@ -6,7 +6,7 @@ public enum Classificacao {
 	CARTAOCREDITO("Cartão de crédito"), CARTAODEBITO("Cartão de débito"),  DINHEIRO("Dinheiro"), APROXIMACAO("Aproximação");
 
 	/* ATRIBUTOS */
-	private String classificacao;
+	protected String classificacao;
 
 	/* Métodos */
 
@@ -15,6 +15,6 @@ public enum Classificacao {
 	}
 
 	String getTipoDeConta() {
-		return classificacao;
+				return classificacao;
 	}
 }

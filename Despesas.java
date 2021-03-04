@@ -9,7 +9,7 @@ public enum Despesas {
 	CONVENIMEDICO("Convênio médico"),  CONVENIOODONTOLOGICO("Convênio odontológico");
 
 	//Atributos
-	String despesas;
+	protected String despesas;
 	
 	//Métodos
 	Despesas(String desp) {
